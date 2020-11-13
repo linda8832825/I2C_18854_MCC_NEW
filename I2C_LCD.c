@@ -3,6 +3,7 @@
 unsigned char RS, i2c_add, BackLight_State = LCD_BACKLIGHT;
 //---------------[ I2C Routines ]-------------------
 //--------------------------------------------------
+
 void I2C_Master_Init(){
     SSP1CON1 = 0x28; //ssp控制暫存器 //0010 1000 
                      //bit7(WCOL：寫衝突檢測bit)=0 =發送時無衝突
@@ -70,9 +71,9 @@ void I2C_NACK(void){//傳送有問題
 }
 unsigned char I2C_Master_Write(unsigned char data){//寫資料和回傳ACK
   I2C_Master_Wait();
-  SSP1BUF = data;  //把要傳的東西丟到mssp1的buffer
+  SSP2BUF = data;  //把要傳的東西丟到mssp1的buffer
   while(SSP1IF); //SSP1IF=0=等待傳輸/接收/bus 狀態進度
-  SSP1IF = 1;  //SSP1IF=1 =傳輸/接收/bus 狀態已完成
+  SSP2IF = 1;  //SSP1IF=1 =傳輸/接收/bus 狀態已完成
   return SSP1CON2bits.ACKSTAT;//回傳有沒有收到確認//1=沒//0=有
 }
 unsigned char I2C_Read_Byte(void){//打開接收和回傳接收到的資料

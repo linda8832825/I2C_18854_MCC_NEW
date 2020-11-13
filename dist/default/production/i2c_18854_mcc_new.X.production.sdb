@@ -35,9 +35,9 @@
 [v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
 "138
 [v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
-"3 C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
+"4 C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
 [v _main main `(v  1 e 1 0 ]
-[s S52 . 1 `uc 1 RA0 1 0 :1:0 
+[s S43 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -47,8 +47,8 @@
 `uc 1 RA7 1 0 :1:7 
 ]
 "402 C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h
-[u S61 . 1 `S52 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES61  1 e 1 @12 ]
+[u S52 . 1 `S43 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES52  1 e 1 @12 ]
 [s S22 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
@@ -109,9 +109,13 @@
 ]
 [u S148 . 1 `S113 1 . 1 0 `S122 1 . 1 0 `S125 1 . 1 0 `S132 1 . 1 0 `S141 1 . 1 0 ]
 [v _SSP1CON2bits SSP1CON2bits `VES148  1 e 1 @401 ]
+"5292
+[v _SSP2BUF SSP2BUF `VEuc  1 e 1 @406 ]
 "41285
 "41285
 [v _SSP1IF SSP1IF `VEb  1 e 0 @14456 ]
+"41336
+[v _SSP2IF SSP2IF `VEb  1 e 0 @14458 ]
 "42503
 [v _TRISC3 TRISC3 `VEb  1 e 0 @155 ]
 "42506
@@ -120,10 +124,10 @@
 [v _RS RS `uc  1 e 1 0 ]
 [v _i2c_add i2c_add `uc  1 e 1 0 ]
 [v _BackLight_State BackLight_State `uc  1 e 1 0 ]
-"3 C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
+"4 C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"15
+"17
 } 0
 "134 C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
 [v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]

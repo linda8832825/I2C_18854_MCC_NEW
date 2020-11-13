@@ -13,27 +13,27 @@
 %PSECTS
 $dist/default/production\i2c_18854_mcc_new.X.production.o
 cinit CODE 0 7F8 7F8 8 2
-text1 CODE 0 703 703 1D 2
-text2 CODE 0 6EE 6EE 15 2
+text1 CODE 0 704 704 1D 2
+text2 CODE 0 6EF 6EF 15 2
 text3 CODE 0 748 748 2E 2
 text4 CODE 0 776 776 82 2
-text5 CODE 0 6DA 6DA 14 2
-text6 CODE 0 6C6 6C6 14 2
-text7 CODE 0 6B5 6B5 11 2
-text8 CODE 0 6A5 6A5 10 2
-text9 CODE 0 688 688 6 2
+text5 CODE 0 6DB 6DB 14 2
+text6 CODE 0 6C7 6C7 14 2
+text7 CODE 0 6B6 6B6 11 2
+text8 CODE 0 6A6 6A6 10 2
+text9 CODE 0 689 689 6 2
 nvCOMMON COMMON 1 7B 7B 1 1
-text10 CODE 0 682 682 6 2
-text11 CODE 0 699 699 C 2
-text12 CODE 0 68E 68E B 2
-idataCOMMON CODE 0 681 681 1 2
-maintext CODE 0 720 720 28 2
+text10 CODE 0 683 683 6 2
+text11 CODE 0 69A 69A C 2
+text12 CODE 0 68F 68F B 2
+idataCOMMON CODE 0 682 682 1 2
+maintext CODE 0 721 721 27 2
 cstackCOMMON COMMON 1 70 70 B 1
 stringtext1 STRCODE 0 800 800 E 2
 stringtext2 STRCODE 0 80E 80E A 2
 dataCOMMON COMMON 1 7D 7D 1 1
 bssCOMMON COMMON 1 7C 7C 1 1
-$C:\Users\linda\AppData\Local\Temp\se9g.o
+$C:\Users\linda\AppData\Local\Temp\sato.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 # %UNUSED Section
@@ -56,9 +56,9 @@ BANK3 1A0-1EF 1
 BANK4 220-26F 1
 BANK5 2A0-2EF 1
 BANK6 320-32F 1
-CONST 4-680 2
+CONST 4-681 2
 CONST 818-FFF 2
-ENTRY 4-680 2
+ENTRY 4-681 2
 ENTRY 818-FFF 2
 IDLOC 8000-8003 2
 SFR10 500-56F 1
@@ -84,7 +84,7 @@ SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 STACK 2000-21EF 1
-CODE 4-680 2
+CODE 4-681 2
 CODE 818-FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -99,9 +99,9 @@ SFR9 480-4EF 1
 BIGRAM 2000-21EF 1
 CONFIG 8007-800B 2
 EEDATA F000-F0FF 2
-STRCODE 4-680 2
+STRCODE 4-681 2
 STRCODE 818-FFF 2
-STRING 4-680 2
+STRING 4-681 2
 STRING 818-FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -117,57 +117,57 @@ STRING 818-FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\i2c_18854_mcc_new.X.production.o
-7F8 cinit CODE >3300:C:\Users\linda\AppData\Local\Temp\se9g.s
-7F8 cinit CODE >3303:C:\Users\linda\AppData\Local\Temp\se9g.s
-7F8 cinit CODE >3323:C:\Users\linda\AppData\Local\Temp\se9g.s
-7FB cinit CODE >3324:C:\Users\linda\AppData\Local\Temp\se9g.s
-7FC cinit CODE >3329:C:\Users\linda\AppData\Local\Temp\se9g.s
-7FD cinit CODE >3335:C:\Users\linda\AppData\Local\Temp\se9g.s
-7FD cinit CODE >3337:C:\Users\linda\AppData\Local\Temp\se9g.s
-7FE cinit CODE >3338:C:\Users\linda\AppData\Local\Temp\se9g.s
-68E text12 CODE >6:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-68E text12 CODE >7:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-691 text12 CODE >13:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-692 text12 CODE >23:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-693 text12 CODE >32:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-695 text12 CODE >33:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-697 text12 CODE >34:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-698 text12 CODE >35:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-699 text11 CODE >36:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-699 text11 CODE >37:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6A4 text11 CODE >48:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-682 text10 CODE >49:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-682 text10 CODE >50:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-685 text10 CODE >51:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-687 text10 CODE >52:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-688 text9 CODE >57:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-688 text9 CODE >58:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-68B text9 CODE >59:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-68D text9 CODE >60:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6A5 text8 CODE >71:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6A6 text8 CODE >72:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6A9 text8 CODE >73:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6AC text8 CODE >74:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6B1 text8 CODE >75:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6B2 text8 CODE >76:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6B4 text8 CODE >77:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6B5 text7 CODE >110:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6B6 text7 CODE >112:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6B9 text7 CODE >113:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6BD text7 CODE >114:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6C2 text7 CODE >115:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6C5 text7 CODE >116:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6C6 text6 CODE >117:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6C7 text6 CODE >119:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6CB text6 CODE >120:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6D0 text6 CODE >121:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6D5 text6 CODE >122:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6D9 text6 CODE >123:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6DA text5 CODE >124:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6DB text5 CODE >125:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6DC text5 CODE >126:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6E1 text5 CODE >127:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6ED text5 CODE >128:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+7F8 cinit CODE >3304:C:\Users\linda\AppData\Local\Temp\sato.s
+7F8 cinit CODE >3307:C:\Users\linda\AppData\Local\Temp\sato.s
+7F8 cinit CODE >3327:C:\Users\linda\AppData\Local\Temp\sato.s
+7FB cinit CODE >3328:C:\Users\linda\AppData\Local\Temp\sato.s
+7FC cinit CODE >3333:C:\Users\linda\AppData\Local\Temp\sato.s
+7FD cinit CODE >3339:C:\Users\linda\AppData\Local\Temp\sato.s
+7FD cinit CODE >3341:C:\Users\linda\AppData\Local\Temp\sato.s
+7FE cinit CODE >3342:C:\Users\linda\AppData\Local\Temp\sato.s
+68F text12 CODE >6:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+68F text12 CODE >7:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+692 text12 CODE >13:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+693 text12 CODE >23:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+694 text12 CODE >32:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+696 text12 CODE >33:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+698 text12 CODE >34:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+699 text12 CODE >35:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+69A text11 CODE >36:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+69A text11 CODE >37:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6A5 text11 CODE >48:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+683 text10 CODE >49:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+683 text10 CODE >50:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+686 text10 CODE >51:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+688 text10 CODE >52:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+689 text9 CODE >57:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+689 text9 CODE >58:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+68C text9 CODE >59:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+68E text9 CODE >60:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6A6 text8 CODE >71:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6A7 text8 CODE >72:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6AA text8 CODE >73:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6AD text8 CODE >74:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6B2 text8 CODE >75:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6B3 text8 CODE >76:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6B5 text8 CODE >77:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6B6 text7 CODE >110:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6B7 text7 CODE >112:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6BA text7 CODE >113:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6BE text7 CODE >114:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6C3 text7 CODE >115:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6C6 text7 CODE >116:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6C7 text6 CODE >117:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6C8 text6 CODE >119:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6CC text6 CODE >120:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6D1 text6 CODE >121:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6D6 text6 CODE >122:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6DA text6 CODE >123:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6DB text5 CODE >124:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6DC text5 CODE >125:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6DD text5 CODE >126:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6E2 text5 CODE >127:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6EE text5 CODE >128:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
 776 text4 CODE >89:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
 777 text4 CODE >90:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
 77B text4 CODE >91:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
@@ -200,24 +200,26 @@ $dist/default/production\i2c_18854_mcc_new.X.production.o
 75C text3 CODE >151:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
 761 text3 CODE >152:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
 775 text3 CODE >153:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6EE text2 CODE >129:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6EF text2 CODE >130:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6F1 text2 CODE >131:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-6F6 text2 CODE >132:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-702 text2 CODE >133:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-703 text1 CODE >134:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-703 text1 CODE >135:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-706 text1 CODE >136:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-71F text1 CODE >137:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
-720 maintext CODE >3:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
-720 maintext CODE >4:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
-722 maintext CODE >5:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
-725 maintext CODE >6:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
-729 maintext CODE >8:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
+6EF text2 CODE >129:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6F0 text2 CODE >130:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6F2 text2 CODE >131:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+6F7 text2 CODE >132:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+703 text2 CODE >133:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+704 text1 CODE >134:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+704 text1 CODE >135:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+707 text1 CODE >136:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+720 text1 CODE >137:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\I2C_LCD.c
+721 maintext CODE >4:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
+721 maintext CODE >5:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
+723 maintext CODE >6:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
+724 maintext CODE >7:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
+727 maintext CODE >8:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
 72B maintext CODE >9:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
 731 maintext CODE >10:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
 738 maintext CODE >11:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
 73E maintext CODE >12:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
+745 maintext CODE >13:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
+745 maintext CODE >15:C:\Users\linda\MPLABXProjects\i2c_18854_mcc_new.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -235,16 +237,16 @@ __Hspace_0 818 0 ABS 0 - -
 __Hspace_1 7E 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
-_LCD_Write_4Bit D8C 0 CODE 0 text6 dist/default/production\i2c_18854_mcc_new.X.production.o
-_LCD_Write_Char DDC 0 CODE 0 text2 dist/default/production\i2c_18854_mcc_new.X.production.o
+_LCD_Write_4Bit D8E 0 CODE 0 text6 dist/default/production\i2c_18854_mcc_new.X.production.o
+_LCD_Write_Char DDE 0 CODE 0 text2 dist/default/production\i2c_18854_mcc_new.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 _RS 7C 0 COMMON 1 bssCOMMON dist/default/production\i2c_18854_mcc_new.X.production.o
 LCD_CMD@CMD 75 0 COMMON 1 cstackCOMMON dist/default/production\i2c_18854_mcc_new.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\linda\AppData\Local\Temp\se9g.o
-_main E40 0 CODE 0 maintext dist/default/production\i2c_18854_mcc_new.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\linda\AppData\Local\Temp\sato.o
+_main E42 0 CODE 0 maintext dist/default/production\i2c_18854_mcc_new.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
-start 4 0 CODE 0 init C:\Users\linda\AppData\Local\Temp\se9g.o
+start 4 0 CODE 0 init C:\Users\linda\AppData\Local\Temp\sato.o
 __size_of_main 0 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __size_of_LCD_CMD 0 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
@@ -255,34 +257,35 @@ __LnvCOMMON 0 0 ABS 0 nvCOMMON -
 __HdataCOMMON 0 0 ABS 0 dataCOMMON -
 __size_of_LCD_Set_Cursor 0 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
 __end_of_LCD_Init FF0 0 CODE 0 text4 dist/default/production\i2c_18854_mcc_new.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\se9g.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\se9g.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\se9g.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\se9g.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\se9g.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\se9g.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sato.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sato.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sato.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sato.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sato.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\linda\AppData\Local\Temp\sato.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
-__end_of_LCD_Write_4Bit DB4 0 CODE 0 text6 dist/default/production\i2c_18854_mcc_new.X.production.o
-__end_of_LCD_Write_Char E06 0 CODE 0 text2 dist/default/production\i2c_18854_mcc_new.X.production.o
+__end_of_LCD_Write_4Bit DB6 0 CODE 0 text6 dist/default/production\i2c_18854_mcc_new.X.production.o
+__end_of_LCD_Write_Char E08 0 CODE 0 text2 dist/default/production\i2c_18854_mcc_new.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
-__pidataCOMMON D02 0 CODE 0 idataCOMMON dist/default/production\i2c_18854_mcc_new.X.production.o
+__pidataCOMMON D04 0 CODE 0 idataCOMMON dist/default/production\i2c_18854_mcc_new.X.production.o
 __LdataCOMMON 0 0 ABS 0 dataCOMMON -
 _i2c_add 7B 0 COMMON 1 nvCOMMON dist/default/production\i2c_18854_mcc_new.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 21EF 0 ABS 0 - C:\Users\linda\AppData\Local\Temp\se9g.o
-___stacklo 2000 0 ABS 0 - C:\Users\linda\AppData\Local\Temp\se9g.o
-__end_of_LCD_CMD DDC 0 CODE 0 text5 dist/default/production\i2c_18854_mcc_new.X.production.o
+___stackhi 21EF 0 ABS 0 - C:\Users\linda\AppData\Local\Temp\sato.o
+___stacklo 2000 0 ABS 0 - C:\Users\linda\AppData\Local\Temp\sato.o
+__end_of_LCD_CMD DDE 0 CODE 0 text5 dist/default/production\i2c_18854_mcc_new.X.production.o
 __size_of_IO_Expander_Write 0 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
 __LidataCOMMON 0 0 ABS 0 idataCOMMON -
 __HnvCOMMON 0 0 ABS 0 nvCOMMON -
 start_initialization FF0 0 CODE 0 cinit dist/default/production\i2c_18854_mcc_new.X.production.o
 _TRISAbits 11 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
 _SSP1IF 3878 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
+_SSP2IF 387A 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
 _TRISC3 9B 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
 _TRISC4 9C 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\linda\AppData\Local\Temp\se9g.o
+___int_sp 0 0 STACK 2 stack C:\Users\linda\AppData\Local\Temp\sato.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -418,23 +421,23 @@ __S1 7E 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __pnvCOMMON 7B 0 COMMON 1 nvCOMMON dist/default/production\i2c_18854_mcc_new.X.production.o
-__end_of_IO_Expander_Write D8C 0 CODE 0 text7 dist/default/production\i2c_18854_mcc_new.X.production.o
-_I2C_Master_Start D04 0 CODE 0 text10 dist/default/production\i2c_18854_mcc_new.X.production.o
+__end_of_IO_Expander_Write D8E 0 CODE 0 text7 dist/default/production\i2c_18854_mcc_new.X.production.o
+_I2C_Master_Start D06 0 CODE 0 text10 dist/default/production\i2c_18854_mcc_new.X.production.o
 __HidataCOMMON 0 0 ABS 0 idataCOMMON -
-_I2C_Master_Write D4A 0 CODE 0 text8 dist/default/production\i2c_18854_mcc_new.X.production.o
-_LCD_Write_String E06 0 CODE 0 text1 dist/default/production\i2c_18854_mcc_new.X.production.o
+_I2C_Master_Write D4C 0 CODE 0 text8 dist/default/production\i2c_18854_mcc_new.X.production.o
+_LCD_Write_String E08 0 CODE 0 text1 dist/default/production\i2c_18854_mcc_new.X.production.o
 __Lintentry 4 0 CODE 0 intentry -
 I2C_Master_Write@data 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c_18854_mcc_new.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\linda\AppData\Local\Temp\se9g.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\linda\AppData\Local\Temp\sato.o
 __size_of_LCD_Write_4Bit 0 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
 __size_of_LCD_Write_Char 0 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
 _LCD_Set_Cursor E90 0 CODE 0 text3 dist/default/production\i2c_18854_mcc_new.X.production.o
 __Lstringtext1 0 0 ABS 0 stringtext1 -
 __Lstringtext2 0 0 ABS 0 stringtext2 -
 __Lstringtext3 0 0 ABS 0 stringtext3 -
-__ptext10 D04 0 CODE 0 text10 dist/default/production\i2c_18854_mcc_new.X.production.o
-__ptext11 D32 0 CODE 0 text11 dist/default/production\i2c_18854_mcc_new.X.production.o
-__ptext12 D1C 0 CODE 0 text12 dist/default/production\i2c_18854_mcc_new.X.production.o
+__ptext10 D06 0 CODE 0 text10 dist/default/production\i2c_18854_mcc_new.X.production.o
+__ptext11 D34 0 CODE 0 text11 dist/default/production\i2c_18854_mcc_new.X.production.o
+__ptext12 D1E 0 CODE 0 text12 dist/default/production\i2c_18854_mcc_new.X.production.o
 __Lbank10 0 0 BANK10 1 bank10 -
 __Lbank11 0 0 BANK11 1 bank11 -
 __Lbank12 0 0 BANK12 1 bank12 -
@@ -457,27 +460,27 @@ __Lbank28 0 0 BANK28 1 bank28 -
 __Lbank29 0 0 BANK29 1 bank29 -
 __Lbank30 0 0 BANK30 1 bank30 -
 __Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext E40 0 CODE 0 maintext dist/default/production\i2c_18854_mcc_new.X.production.o
+__pmaintext E42 0 CODE 0 maintext dist/default/production\i2c_18854_mcc_new.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
 __Lcommon 0 0 ABS 0 common -
-_LCD_CMD DB4 0 CODE 0 text5 dist/default/production\i2c_18854_mcc_new.X.production.o
+_LCD_CMD DB6 0 CODE 0 text5 dist/default/production\i2c_18854_mcc_new.X.production.o
 LCD_Set_Cursor@COL 76 0 COMMON 1 cstackCOMMON dist/default/production\i2c_18854_mcc_new.X.production.o
 LCD_Set_Cursor@ROW 79 0 COMMON 1 cstackCOMMON dist/default/production\i2c_18854_mcc_new.X.production.o
 LCD_Write_String@i 79 0 COMMON 1 cstackCOMMON dist/default/production\i2c_18854_mcc_new.X.production.o
-__end_of_I2C_Master_Init D32 0 CODE 0 text12 dist/default/production\i2c_18854_mcc_new.X.production.o
-__end_of_I2C_Master_Stop D1C 0 CODE 0 text9 dist/default/production\i2c_18854_mcc_new.X.production.o
-__end_of_I2C_Master_Wait D4A 0 CODE 0 text11 dist/default/production\i2c_18854_mcc_new.X.production.o
+__end_of_I2C_Master_Init D34 0 CODE 0 text12 dist/default/production\i2c_18854_mcc_new.X.production.o
+__end_of_I2C_Master_Stop D1E 0 CODE 0 text9 dist/default/production\i2c_18854_mcc_new.X.production.o
+__end_of_I2C_Master_Wait D4C 0 CODE 0 text11 dist/default/production\i2c_18854_mcc_new.X.production.o
 __end_of_LCD_Set_Cursor EEC 0 CODE 0 text3 dist/default/production\i2c_18854_mcc_new.X.production.o
-_IO_Expander_Write D6A 0 CODE 0 text7 dist/default/production\i2c_18854_mcc_new.X.production.o
-__end_of_I2C_Master_Start D10 0 CODE 0 text10 dist/default/production\i2c_18854_mcc_new.X.production.o
+_IO_Expander_Write D6C 0 CODE 0 text7 dist/default/production\i2c_18854_mcc_new.X.production.o
+__end_of_I2C_Master_Start D12 0 CODE 0 text10 dist/default/production\i2c_18854_mcc_new.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
-__end_of_I2C_Master_Write D6A 0 CODE 0 text8 dist/default/production\i2c_18854_mcc_new.X.production.o
+__end_of_I2C_Master_Write D6C 0 CODE 0 text8 dist/default/production\i2c_18854_mcc_new.X.production.o
 __pbssCOMMON 7C 0 COMMON 1 bssCOMMON dist/default/production\i2c_18854_mcc_new.X.production.o
 __Lend_init 4 0 CODE 0 end_init -
-__end_of_LCD_Write_String E40 0 CODE 0 text1 dist/default/production\i2c_18854_mcc_new.X.production.o
+__end_of_LCD_Write_String E42 0 CODE 0 text1 dist/default/production\i2c_18854_mcc_new.X.production.o
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __size_of_I2C_Master_Start 0 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
 __size_of_I2C_Master_Write 0 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
@@ -486,22 +489,22 @@ __Hintentry 4 0 CODE 0 intentry -
 __size_of_LCD_Write_String 0 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 4 0 CODE 0 reset_vec -
-__ptext1 E06 0 CODE 0 text1 dist/default/production\i2c_18854_mcc_new.X.production.o
-__ptext2 DDC 0 CODE 0 text2 dist/default/production\i2c_18854_mcc_new.X.production.o
+__ptext1 E08 0 CODE 0 text1 dist/default/production\i2c_18854_mcc_new.X.production.o
+__ptext2 DDE 0 CODE 0 text2 dist/default/production\i2c_18854_mcc_new.X.production.o
 __ptext3 E90 0 CODE 0 text3 dist/default/production\i2c_18854_mcc_new.X.production.o
 __ptext4 EEC 0 CODE 0 text4 dist/default/production\i2c_18854_mcc_new.X.production.o
-__ptext5 DB4 0 CODE 0 text5 dist/default/production\i2c_18854_mcc_new.X.production.o
-__ptext6 D8C 0 CODE 0 text6 dist/default/production\i2c_18854_mcc_new.X.production.o
-__ptext7 D6A 0 CODE 0 text7 dist/default/production\i2c_18854_mcc_new.X.production.o
-__ptext8 D4A 0 CODE 0 text8 dist/default/production\i2c_18854_mcc_new.X.production.o
-__ptext9 D10 0 CODE 0 text9 dist/default/production\i2c_18854_mcc_new.X.production.o
+__ptext5 DB6 0 CODE 0 text5 dist/default/production\i2c_18854_mcc_new.X.production.o
+__ptext6 D8E 0 CODE 0 text6 dist/default/production\i2c_18854_mcc_new.X.production.o
+__ptext7 D6C 0 CODE 0 text7 dist/default/production\i2c_18854_mcc_new.X.production.o
+__ptext8 D4C 0 CODE 0 text8 dist/default/production\i2c_18854_mcc_new.X.production.o
+__ptext9 D12 0 CODE 0 text9 dist/default/production\i2c_18854_mcc_new.X.production.o
 LCD_Write_4Bit@Nibble 73 0 COMMON 1 cstackCOMMON dist/default/production\i2c_18854_mcc_new.X.production.o
 IO_Expander_Write@Data 71 0 COMMON 1 cstackCOMMON dist/default/production\i2c_18854_mcc_new.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
-_I2C_Master_Init D1C 0 CODE 0 text12 dist/default/production\i2c_18854_mcc_new.X.production.o
-_I2C_Master_Stop D10 0 CODE 0 text9 dist/default/production\i2c_18854_mcc_new.X.production.o
-_I2C_Master_Wait D32 0 CODE 0 text11 dist/default/production\i2c_18854_mcc_new.X.production.o
+_I2C_Master_Init D1E 0 CODE 0 text12 dist/default/production\i2c_18854_mcc_new.X.production.o
+_I2C_Master_Stop D12 0 CODE 0 text9 dist/default/production\i2c_18854_mcc_new.X.production.o
+_I2C_Master_Wait D34 0 CODE 0 text11 dist/default/production\i2c_18854_mcc_new.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
 __Hstringtext1 0 0 ABS 0 stringtext1 -
 __Hstringtext2 0 0 ABS 0 stringtext2 -
@@ -514,6 +517,7 @@ _SSP1CON2bits 191 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.producti
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c_18854_mcc_new.X.production.o
 _SSP1ADD 18D 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
 _SSP1BUF 18C 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
+_SSP2BUF 196 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.X.production.o
 __Hend_init 8 0 CODE 0 end_init -
 __end_of_main E90 0 CODE 0 maintext dist/default/production\i2c_18854_mcc_new.X.production.o
 __Hram 0 0 ABS 0 ram -
@@ -551,20 +555,20 @@ __size_of_I2C_Master_Wait 0 0 ABS 0 - dist/default/production\i2c_18854_mcc_new.
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7F8 FF0 8 2
-text1 0 703 E06 1D 2
-text2 0 6EE DDC 15 2
+text1 0 704 E08 1D 2
+text2 0 6EF DDE 15 2
 text3 0 748 E90 2E 2
 text4 0 776 EEC 82 2
-text5 0 6DA DB4 14 2
-text6 0 6C6 D8C 14 2
-text7 0 6B5 D6A 11 2
-text8 0 6A5 D4A 10 2
-text9 0 688 D10 6 2
-text10 0 682 D04 6 2
-text11 0 699 D32 C 2
-text12 0 68E D1C B 2
-idataCOMMON 0 681 D02 1 2
-maintext 0 720 E40 28 2
+text5 0 6DB DB6 14 2
+text6 0 6C7 D8E 14 2
+text7 0 6B6 D6C 11 2
+text8 0 6A6 D4C 10 2
+text9 0 689 D12 6 2
+text10 0 683 D06 6 2
+text11 0 69A D34 C 2
+text12 0 68F D1E B 2
+idataCOMMON 0 682 D04 1 2
+maintext 0 721 E42 27 2
 cstackCOMMON 1 70 70 E 1
 stringtext1 0 800 1000 18 2
 reset_vec 0 0 0 4 2

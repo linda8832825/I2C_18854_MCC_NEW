@@ -19775,16 +19775,18 @@ void LCD_SL();
 void LCD_Clear();
 # 2 "main.c" 2
 
+
 void main(void) {
     TRISAbits.TRISA1=0;
+    PORTAbits.RA1=0;
     I2C_Master_Init();
     LCD_Init(0x4E);
+    LCD_Set_Cursor(1, 1);
+    LCD_Write_String(" Khaled Magdy");
+    LCD_Set_Cursor(2, 1);
+    LCD_Write_String(" DeepBlue");
     while(1) {
-        PORTAbits.RA1=1;
-        LCD_Set_Cursor(1, 1);
-        LCD_Write_String(" Khaled Magdy");
-        LCD_Set_Cursor(2, 1);
-        LCD_Write_String(" DeepBlue");
+
     }
     return;
 }

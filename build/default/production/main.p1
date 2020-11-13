@@ -11,13 +11,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "609
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 609: extern volatile TRISAbits_t TRISAbits __attribute__((address(0x011)));
 [v _TRISAbits `VS40 ~T0 @X0 0 e@17 ]
-"27 ./I2C_LCD.h
-[; ;./I2C_LCD.h: 27: void I2C_Master_Init();
-[v _I2C_Master_Init `(v ~T0 @X0 0 e? ]
-"37
-[; ;./I2C_LCD.h: 37: void LCD_Init(unsigned char I2C_Add);
-[v _LCD_Init `(v ~T0 @X0 0 ef1`uc ]
-"391 C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h
+"391
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 391:     struct {
 [s S33 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S33 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
@@ -28,7 +22,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "402
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 402: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x00C)));
 [v _PORTAbits `VS32 ~T0 @X0 0 e@12 ]
-"41 ./I2C_LCD.h
+"27 ./I2C_LCD.h
+[; ;./I2C_LCD.h: 27: void I2C_Master_Init();
+[v _I2C_Master_Init `(v ~T0 @X0 0 e? ]
+"37
+[; ;./I2C_LCD.h: 37: void LCD_Init(unsigned char I2C_Add);
+[v _LCD_Init `(v ~T0 @X0 0 ef1`uc ]
+"41
 [; ;./I2C_LCD.h: 41: void LCD_Set_Cursor(unsigned char ROW, unsigned char COL);
 [v _LCD_Set_Cursor `(v ~T0 @X0 0 ef2`uc`uc ]
 "43
@@ -1586,51 +1586,51 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 34907: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"3 main.c
-[; ;main.c: 3: void main(void) {
+"4 main.c
+[; ;main.c: 4: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"4
-[; ;main.c: 4:     TRISAbits.TRISA1=0;
-[e = . . _TRISAbits 0 1 -> -> 0 `i `uc ]
 "5
-[; ;main.c: 5:     I2C_Master_Init();
-[e ( _I2C_Master_Init ..  ]
+[; ;main.c: 5:     TRISAbits.TRISA1=0;
+[e = . . _TRISAbits 0 1 -> -> 0 `i `uc ]
 "6
-[; ;main.c: 6:     LCD_Init(0x4E);
-[e ( _LCD_Init (1 -> -> 78 `i `uc ]
+[; ;main.c: 6:     PORTAbits.RA1=0;
+[e = . . _PORTAbits 0 1 -> -> 0 `i `uc ]
 "7
-[; ;main.c: 7:     while(1) {
-[e :U 1564 ]
-{
+[; ;main.c: 7:     I2C_Master_Init();
+[e ( _I2C_Master_Init ..  ]
 "8
-[; ;main.c: 8:         PORTAbits.RA1=1;
-[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
+[; ;main.c: 8:     LCD_Init(0x4E);
+[e ( _LCD_Init (1 -> -> 78 `i `uc ]
 "9
-[; ;main.c: 9:         LCD_Set_Cursor(1, 1);
+[; ;main.c: 9:     LCD_Set_Cursor(1, 1);
 [e ( _LCD_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
 "10
-[; ;main.c: 10:         LCD_Write_String(" Khaled Magdy");
+[; ;main.c: 10:     LCD_Write_String(" Khaled Magdy");
 [e ( _LCD_Write_String (1 :s 1C ]
 "11
-[; ;main.c: 11:         LCD_Set_Cursor(2, 1);
+[; ;main.c: 11:     LCD_Set_Cursor(2, 1);
 [e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
 "12
-[; ;main.c: 12:         LCD_Write_String(" DeepBlue");
+[; ;main.c: 12:     LCD_Write_String(" DeepBlue");
 [e ( _LCD_Write_String (1 :s 2C ]
 "13
-[; ;main.c: 13:     }
+[; ;main.c: 13:     while(1) {
+[e :U 1564 ]
+{
+"15
+[; ;main.c: 15:     }
 }
 [e :U 1563 ]
 [e $U 1564  ]
 [e :U 1565 ]
-"14
-[; ;main.c: 14:     return;
+"16
+[; ;main.c: 16:     return;
 [e $UE 1562  ]
-"15
-[; ;main.c: 15: }
+"17
+[; ;main.c: 17: }
 [e :UE 1562 ]
 }
 [a 1C 32 75 104 97 108 101 100 32 77 97 103 100 121 0 ]

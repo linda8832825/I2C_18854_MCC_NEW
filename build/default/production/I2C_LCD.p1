@@ -44,12 +44,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 "5090
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5090: extern volatile SSP1CON2bits_t SSP1CON2bits __attribute__((address(0x191)));
 [v _SSP1CON2bits `VS241 ~T0 @X0 0 e@401 ]
-"4349
-[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4349: extern volatile unsigned char SSP1BUF __attribute__((address(0x18C)));
-[v _SSP1BUF `Vuc ~T0 @X0 0 e@396 ]
+"5292
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 5292: extern volatile unsigned char SSP2BUF __attribute__((address(0x196)));
+[v _SSP2BUF `Vuc ~T0 @X0 0 e@406 ]
 "41285
 [; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 41285: extern volatile __bit SSP1IF __attribute__((address(0x3878)));
 [v _SSP1IF `Vb ~T0 @X0 0 e@14456 ]
+"41336
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 41336: extern volatile __bit SSP2IF __attribute__((address(0x387A)));
+[v _SSP2IF `Vb ~T0 @X0 0 e@14458 ]
+"4349
+[; ;C:/Users/linda/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f18854.h: 4349: extern volatile unsigned char SSP1BUF __attribute__((address(0x18C)));
+[v _SSP1BUF `Vuc ~T0 @X0 0 e@396 ]
 "38 ./I2C_LCD.h
 [; ;./I2C_LCD.h: 38: void IO_Expander_Write(unsigned char Data);
 [v _IO_Expander_Write `(v ~T0 @X0 0 ef1`uc ]
@@ -1635,8 +1641,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;I2C_LCD.c: 23:     SSP1STAT = 0x00;
 [e = _SSP1STAT -> -> 0 `i `uc ]
 "32
-[; ;I2C_LCD.c: 32:     SSP1ADD = ((4000000/4)/100000) - 1;
-[e = _SSP1ADD -> - / / -> 4000000 `l -> -> 4 `i `l -> 100000 `l -> -> 1 `i `l `uc ]
+[; ;I2C_LCD.c: 32:     SSP1ADD = ((16000000/4)/100000) - 1;
+[e = _SSP1ADD -> - / / -> 16000000 `l -> -> 4 `i `l -> 100000 `l -> -> 1 `i `l `uc ]
 "33
 [; ;I2C_LCD.c: 33:     TRISC3 = 1;
 [e = _TRISC3 -> -> 1 `i `b ]
@@ -1761,8 +1767,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;I2C_LCD.c: 72:   I2C_Master_Wait();
 [e ( _I2C_Master_Wait ..  ]
 "73
-[; ;I2C_LCD.c: 73:   SSP1BUF = data;
-[e = _SSP1BUF _data ]
+[; ;I2C_LCD.c: 73:   SSP2BUF = data;
+[e = _SSP2BUF _data ]
 "74
 [; ;I2C_LCD.c: 74:   while(SSP1IF);
 [e $U 1573  ]
@@ -1771,8 +1777,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ _SSP1IF 1574  ]
 [e :U 1575 ]
 "75
-[; ;I2C_LCD.c: 75:   SSP1IF = 1;
-[e = _SSP1IF -> -> 1 `i `b ]
+[; ;I2C_LCD.c: 75:   SSP2IF = 1;
+[e = _SSP2IF -> -> 1 `i `b ]
 "76
 [; ;I2C_LCD.c: 76:   return SSP1CON2bits.ACKSTAT;
 [e ) . . _SSP1CON2bits 0 6 ]

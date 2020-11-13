@@ -19789,7 +19789,7 @@ void I2C_Master_Init(){
 # 23 "I2C_LCD.c"
     SSP1STAT = 0x00;
 # 32 "I2C_LCD.c"
-    SSP1ADD = ((4000000/4)/100000) - 1;
+    SSP1ADD = ((16000000/4)/100000) - 1;
     TRISC3 = 1;
     TRISC4 = 1;
 }
@@ -19821,9 +19821,9 @@ void I2C_NACK(void){
 }
 unsigned char I2C_Master_Write(unsigned char data){
   I2C_Master_Wait();
-  SSP1BUF = data;
+  SSP2BUF = data;
   while(SSP1IF);
-  SSP1IF = 1;
+  SSP2IF = 1;
   return SSP1CON2bits.ACKSTAT;
 }
 unsigned char I2C_Read_Byte(void){
